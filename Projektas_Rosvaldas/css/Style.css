@@ -1,0 +1,465 @@
+html, body {
+    font-size: 16px;
+    margin: 0;
+    background-color: #fff;
+}
+
+/* header */
+
+.site-header {
+    position: fixed;
+    width: 100%;
+    display: block;
+    background-color: #fbad27;
+    height: 52px;
+    overflow: hidden;
+    top: 0;
+}
+
+.container {
+    max-width: 1276px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.site-header ul a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.main-nav a:hover, .main-nav a:active {
+    background-color: #c8902f;
+    border-bottom: 2px solid #fff;
+    padding: 15px;
+}
+
+.main-nav {
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    bottom: 52px;
+    height: 100%;
+}
+
+/* Hero */
+
+
+.hero {
+    background-image: url("../failai/Video/fonas.jpg");
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 200px;
+    height: 500px;
+    background-size: cover;
+}
+
+.hero > .container h1 {
+    color: #fff;
+    font-size: 3.25rem;
+    padding-bottom: 31px;
+    margin: 0;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+.hero > .container p {
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    color: #fff;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+.hero > .container a {
+    font-size: 0.75rem;
+    background-color: #fbad27;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 59px 19px;
+    border-radius: 30px;
+    border: none;
+}
+
+.herobtn:hover {
+    background-color: #c8902f;
+}
+
+/* introduction */
+
+.introduction{
+    height: 500px;
+    flex-direction: column;
+    width: 100%;
+    /* position:; */
+}
+
+.welcome {
+    padding-top: 50px;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding-bottom: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+
+.welcome h1 {
+    font-size: 2rem;
+    color: #4a4a4a;
+}
+
+.welcome p {
+    color: #757575;
+    font-size: 1rem;
+}
+
+.item {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    flex-direction: column;
+    padding-bottom: 50px;
+    width: 300px;
+    padding-bottom: 30px;
+}
+
+.item p {
+    color: #757575;
+    font-size: 1rem;
+}
+
+.item h4 {
+    font-size: 2rem;
+    color: #4a4a4a;
+}
+
+.showoff {
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.showoff .fa-sharp {
+    color: #fbad27;
+}
+
+.item:nth-child(2) {
+   box-shadow: 0px 0px 17px -3px #fbad276d;
+}
+
+.decor{
+    justify-content: center;
+}
+
+.decor > :nth-child(2){
+    color: #fbad27;
+}
+
+.decor:after {
+    content: "";
+    border-bottom: 1px solid rgba(149, 149, 149, 0.189);
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+/* Destination */
+
+.destination {
+    display: block;
+    height: 1200px;
+    padding-top: 350px;
+}
+
+.find-destination {
+    align-items: center;
+    text-align: center;
+}
+
+.search {
+    text-align: center;
+    justify-content: center;
+}
+
+.destination input {
+    border: none;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+/*  */
+
+.locations {
+    padding-top: 60px;
+    display: grid;
+    grid-template-areas:
+    "a b c"
+    "d e f";
+    grid-gap: 8px;;
+    height: auto;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+.thailand {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/Thailand.jpg);
+    grid-area: a;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.australia {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/Australia.jpg);
+    grid-area: b;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.indonesia {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/Indonesia.jpg);
+    grid-area: c;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.france {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/France.jpg);
+    grid-area: d;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.malaysia {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/Malaysia.jpg);
+    grid-area: e;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uae {    
+    background-image: url(/Projektas_Rosvaldas/failai/Nuotraukos/UAE.jpg);
+    grid-area: f;
+    text-align: center;
+    height: 395px;
+    width: 403px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loc-content{
+    justify-content: space-evenly;
+}
+
+.loc-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.choose {
+justify-content: center;
+}
+
+.choose > a {
+    
+    font-size: 0.75rem;
+    background-color: #fbad27;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 59px 19px;
+    border-radius: 30px;
+}
+
+.choose:after {
+    content: "";
+    border-bottom: 1px solid rgba(148, 148, 148, 0.189);
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    position: absolute;
+    padding-bottom: 70px;
+}
+
+/* Blogs */
+
+.blogs {
+    height: 700px;
+    display: block;
+    margin-top: 10px;
+}
+
+.blog-news {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    padding-bottom: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.blogarticles {
+    padding-top: 10px;
+    display: grid;
+    grid-template-areas:
+    "a a c e"
+    "a a c f"
+    "b b d f";
+    height: 100%;
+    width: 100%;
+    margin-bottom: 60px;
+    border: 1px transparent;
+    justify-content: space-between;
+}
+
+.blogarticles > div {
+    box-shadow: 0 0 30px -1px #808080a6;
+}
+
+.rio {
+    width: fit-content;
+    height:fit-content;
+    grid-area: a;
+}
+
+.istanbul {
+    grid-area: b; 
+    /* height: fit-content;
+    width: fit-content; */
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.liberty {
+    grid-area: c;
+    /* width: fit-content;
+    height:fit-content; */
+    align-items: center;
+}
+
+.singapore {
+    grid-area: d;
+    /* width: fit-content;
+    height:fit-content; */
+}
+
+.egypt {
+    grid-area: e;
+    /* width: fit-content;
+    height:fit-content; */
+    /* align-self: flex-start; */
+}
+
+.shimla {
+    grid-area: f;
+    /* height: fit-content;
+    width: fit-content; */
+    align-self: flex-end;
+}
+
+.read {
+    justify-content: center;
+    padding-top: 50px;
+}
+    
+.read > a {  
+    font-size: 0.75rem;
+    background-color: #fbad27;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 59px 19px;
+    border-radius: 30px;
+}
+    
+.read:after {
+    content: "";
+    border-bottom: 1px solid rgba(148, 148, 148, 0.189);
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    position: absolute;
+    padding-bottom: 70px;
+}
+
+/* askbox */
+
+/* .ask-from{
+    background-color: #fbad27;
+} */
+
+/* footer */
+
+/* footer{
+    padding-top: 150px;
+    position: relative;
+    bottom: 0;
+}
+
+footer > .flex-container{
+    justify-content:space-around;
+    top: auto;
+    padding-bottom: 60px;
+}
+
+.col > ul {
+    list-style: none;
+    color: #616161;
+}
+.col > h3 {
+    color: #4a4a4a;
+    font-weight: 600;
+} 
+
+a {
+    text-decoration: none;
+    color: #484848;
+}
+
+.fa-brands {
+    padding: 2.5px;
+}
+
+.copy {
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.copy:before {
+    content: "";
+    border-bottom: 1px solid rgba(149, 149, 149, 0.189);
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    position: absolute;
+} */
